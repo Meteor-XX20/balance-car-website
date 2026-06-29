@@ -1,0 +1,88 @@
+.introCard {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.introCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* 产品介绍概要 */
+.productIntro {
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 40px;
+  padding: 20px;
+  background: rgba(99, 102, 241, 0.06);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+/* 子模块标题 */
+.subTitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-accent-light);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.subContent {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 36px;
+}
+
+/* 功能特点网格 */
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.featureCard {
+  background: rgba(99, 102, 241, 0.04);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.featureCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px var(--color-accent-glow);
+}
+
+.featureIcon {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.featureTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 6px;
+}
+
+.featureDesc {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+  .introCard {
+    padding: 24px;
+  }
+}
