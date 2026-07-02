@@ -43,7 +43,7 @@ export const heroData = {
   ctaText: '了解更多',
   ctaLink: '#products',
   // 科技感背景图（可替换为本地图片或自己的链接）
-  bgImage: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920&q=80',
+  bgImage: '/balance-car-website/images/hero-bg.jpg',
 }
 
 // ---------- 两大产品 Tab ----------
@@ -159,7 +159,7 @@ export const footerData = {
 export const detailData = {
   tracking: {
     title: '八路寻迹小车 — 技术详解',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80',
+    image: '/balance-car-website/images/tracking-detail.svg',
     description: `八路寻迹小车采用 STM32F103C8T6 作为主控芯片，前部搭载 8 个 TCRT5000 红外反射式传感器，以 12mm 间距横向排列，形成 96mm 宽的检测阵列。
 
 传感器通过 ADC 多通道扫描方式，以 1kHz 采样率采集各路模拟电压值（0~3.3V，对应 0~4095 数字量）。主控采用加权平均法计算轨迹中心偏移量：
@@ -172,7 +172,7 @@ export const detailData = {
   },
   balance: {
     title: '自平衡车 — 技术详解',
-    image: 'https://images.unsplash.com/photo-1598986647860-2a1f5a096f0b?w=800&q=80',
+    image: '/balance-car-website/images/balance-detail.svg',
     description: `自平衡车以 STM32F103C8T6 为核心，搭载 MPU6050 六轴传感器（3轴陀螺仪 + 3轴加速度计），通过 I²C 总线以 400kHz 速率通信。
 
 姿态解算采用互补滤波算法：
